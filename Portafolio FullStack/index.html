@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Personal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Efecto de resplandor verde */
+    .glow-btn {
+      box-shadow: 0 0 25px rgba(50, 205, 50, 0.4);
+      transition: all 0.3s ease;
+    }
+    .glow-btn:hover {
+      box-shadow: 0 0 35px rgba(50, 205, 50, 0.7);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c0e] text-white selection:bg-lime-500 selection:text-black">
+
+  <header class="sticky top-6 z-50 w-full px-6">
+    <nav class="max-w-5xl mx-auto bg-[#141518]/85 backdrop-blur-md border border-[#23262b] rounded-full px-6 sm:px-8 py-4 flex items-center justify-between shadow-2xl">
+      <ul class="flex items-center space-x-5 sm:space-x-7 text-xs sm:text-sm text-neutral-400 font-normal">
+        <li><a href="#inicio" class="text-white hover:text-lime-400 transition-colors">Inicio</a></li>
+        <li><a href="#proyectos" class="hover:text-lime-400 transition-colors font-medium text-lime-400">Proyectos</a></li>
+        <li><a href="#contacto" class="hover:text-lime-400 transition-colors">Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center space-x-4 text-neutral-400 text-sm sm:text-base">
+        <a href="https://instagram.com/kenny_mansilla" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/kevinw607" target="_blank" class="hover:text-white transition-colors" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="min-h-[85vh] flex items-center max-w-5xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center w-full">
+      
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#16181d] border border-neutral-800 text-xs text-lime-400 font-mono-code">
+          <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+          <span>Disponible para proyectos</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+          Hola, soy <br class="hidden sm:inline"/><span class="text-neutral-100">Kevin Mansilla</span>
+        </h1>
+
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed max-w-lg font-mono-code">
+          Estudiante de ingenieria en informatica del DuocUC cede Puerto Montt.
+        </p>
+
+        <div class="pt-2">
+          <a href="#proyectos" class="inline-flex items-center space-x-2 bg-[#3dbb02] hover:bg-[#34a102] text-white font-medium px-8 py-3.5 rounded-lg glow-btn">
+            <span>Ver mis proyectos</span>
+            <i class="fa-solid fa-arrow-down text-xs ml-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-5 flex justify-center md:justify-end">
+        <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-[#1c1f24] shadow-2xl group">
+          <img 
+            src="" 
+            alt="Foto de perfil" 
+            class="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="marcas" class="max-w-5xl mx-auto px-6 py-8">
+    <p class="text-xs font-mono-code text-neutral-500 mb-4 uppercase tracking-wider">Tecnologías & Marcas con las que he trabajado</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <div class="bg-[#121316] border border-[#1f2227] hover:border-neutral-700 py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 text-neutral-300 font-semibold text-sm transition-colors">
+        <i class="fa-brands fa-github text-sm mr-1"></i>
+        <span>GitHub</span>
+      </div>
+      <div class="bg-[#121316] border border-[#1f2227] hover:border-neutral-700 py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 text-neutral-300 font-semibold text-sm transition-colors">
+        <i class="fa-brands fa-github text-sm mr-1"></i>
+        <span>GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="max-w-5xl mx-auto px-6 py-20">
+    <div class="mb-12">
+      <span class="text-xs font-mono-code text-lime-400 uppercase tracking-widest bg-[#142312] border border-lime-900/50 px-3 py-1 rounded-full">Portafolio</span>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-4">Proyectos Destacados</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-2 font-mono-code">Una selección de proyectos recientes en desarrollo web, APIs y diseño UI.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+
+      <article class="bg-[#121316] border border-[#1f2227] rounded-2xl overflow-hidden hover:border-neutral-700 transition-all duration-300 flex flex-col group">
+        <div class="relative overflow-hidden aspect-video bg-[#1a1c21]">
+          <img 
+            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop" 
+            alt="E-commerce Moderno" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#121316] via-transparent to-transparent opacity-80"></div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="text-xs font-mono-code px-2.5 py-1 bg-[#1a1d24] text-neutral-300 rounded-md border border-neutral-800">Next.js</span>
+              <span class="text-xs font-mono-code px-2.5 py-1 bg-[#1a1d24] text-neutral-300 rounded-md border border-neutral-800">TypeScript</span>
+              <span class="text-xs font-mono-code px-2.5 py-1 bg-[#1a1d24] text-neutral-300 rounded-md border border-neutral-800">PostgreSQL</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white group-hover:text-lime-400 transition-colors">
+              E-Commerce Con Carrito Inteligente
+            </h3>
+            <p class="text-neutral-400 text-sm mt-2 leading-relaxed">
+              Tienda en línea fabricada para una papeleria local, cuenta con loggin de usuarios, monitoreo de stock entre otras cosas.
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-4 pt-2">
+            <a href="#" class="text-sm font-medium text-lime-400 hover:text-lime-300 inline-flex items-center space-x-1 transition-colors">
+              <span>Ver demo en vivo</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+            </a>
+            <a href="#" class="text-sm font-medium text-neutral-400 hover:text-white inline-flex items-center space-x-1 transition-colors">
+              <i class="fa-brands fa-github text-sm mr-1"></i>
+              <span>Código</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer id="contacto" class="border-t border-[#1f2227] bg-[#0d0e11] py-12">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="text-lg font-bold">¿Tienes una idea en mente?</h4>
+        <p class="text-neutral-400 text-sm">Hablemos y creemos algo genial juntos.</p>
+      </div>
+      <a href="mailto:lolexoalv@gmail.com" class="bg-[#1a1c22] hover:bg-neutral-800 border border-neutral-700 px-6 py-3 rounded-lg text-sm font-medium text-white transition-colors">
+        Enviar un Correo
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
